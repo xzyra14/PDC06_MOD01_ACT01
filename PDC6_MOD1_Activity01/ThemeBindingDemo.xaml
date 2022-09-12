@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC6_MOD1_Activity01.ThemeBindingDemo">
+    <ContentPage.Resources>
+        <Style x:Key="labelstyle"
+               TargetType="Label">
+               
+               <Setter Property="TextColor"
+                       Value="{AppThemeBinding Black, Light=Blue, Dark=Teal}" />
+        </Style>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Label Text="This text is green in light mode, and red in dark mode."
+               TextColor="{AppThemeBinding Light=Green, Dark=Red}" />
+        <Label Text="This text is black by default, blue in light mode, and teal in dark mode."
+               Style="{StaticResource labelstyle}" />
+    </StackLayout>
+</ContentPage>

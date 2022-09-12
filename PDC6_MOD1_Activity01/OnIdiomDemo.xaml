@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC6_MOD1_Activity01.OnIdiomDemo">
+    <ContentPage.Content>
+        <StackLayout>
+            <BoxView Color="{OnIdiom Yellow, Phone=Blue, Tablet=Green, Desktop=Pink}"
+                     WidthRequest="{OnIdiom 250, Phone=200, Tablet=400, Desktop=250}"
+                     HeightRequest="{OnIdiom 250, Phone=200, Tablet=400, Desktop=250}"
+                     HorizontalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
